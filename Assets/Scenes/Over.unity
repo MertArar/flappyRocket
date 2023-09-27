@@ -123,23 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &60834844 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5551853741119888736, guid: 4ac3cbf9c8cc18342892c9c4f3113b97, type: 3}
-  m_PrefabInstance: {fileID: 3240551286440127991}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &60834852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60834844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 189bbc92b908430449971c9c1a32a91a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,10 +438,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 60834852, guid: 4ac3cbf9c8cc18342892c9c4f3113b97, type: 3}
+      propertyPath: crash
+      value: 
+      objectReference: {fileID: 8300000, guid: da4870f8552cee647a4560d21e605e08, type: 3}
+    - target: {fileID: 60834852, guid: 4ac3cbf9c8cc18342892c9c4f3113b97, type: 3}
+      propertyPath: success
+      value: 
+      objectReference: {fileID: 8300000, guid: c24d94e919f8e86488e132ea7e41a75c, type: 3}
     - target: {fileID: 1064122829, guid: 4ac3cbf9c8cc18342892c9c4f3113b97, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
+      propertyPath: m_audioClip
+      value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1735396609, guid: 4ac3cbf9c8cc18342892c9c4f3113b97, type: 3}
+      propertyPath: mainEngine
+      value: 
+      objectReference: {fileID: 8300000, guid: 4738fd7246f4f624ea3712272f8cd767, type: 3}
     - target: {fileID: 5551853741119888736, guid: 4ac3cbf9c8cc18342892c9c4f3113b97, type: 3}
       propertyPath: m_Name
       value: Rocket
@@ -469,7 +464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5559121311416192527, guid: 4ac3cbf9c8cc18342892c9c4f3113b97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.42
+      value: -22.534
       objectReference: {fileID: 0}
     - target: {fileID: 5559121311416192527, guid: 4ac3cbf9c8cc18342892c9c4f3113b97, type: 3}
       propertyPath: m_LocalPosition.y

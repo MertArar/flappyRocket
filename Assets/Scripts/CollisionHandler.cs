@@ -5,35 +5,58 @@ public class CollisionHandler : MonoBehaviour
 {
     
     [SerializeField] float levelLoadDelay = 2f; 
+    [SerializeField] AudioClip success; 
+    [SerializeField] AudioClip crash; 
+    
+    AudioSource audioSource;
+    
+    bool isTransitioning = false;
+    
+    void Start() 
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     void OnCollisionEnter(Collision other) 
     {
-      switch(other.gameObject.tag)
-      {
-        case "Friendly":
-            Debug.Log("This thing is friendly");
-            break;
-        case "Finish":
-            StartSuccessSequence();
-            break;
-        case "Fuel":
-            Debug.Log("You picked up fuel");
-            break;
-        default:
-            StartCrashSequence();
-            break;
+        
+        if(isTransitioning)
+        {
+            return;
+        }
+        
+        switch(other.gameObject.tag)
+        {
+            case "Friendly":
+                Debug.Log("This thing is friendly");
+                break;
+            case "Finish":
+                StartSuccessSequence();
+                break;
+            case "Fuel":
+                Debug.Log("You picked up fuel");
+                break;
+            default:
+                StartCrashSequence();
+                break;
       }  
     }
     
     void StartSuccessSequence() 
     {
+        isTransitioning = true;
+        audioSource.Stop();
+        audioSource.PlayOneShot(success);
+         // todo add particle effect upon success
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextLevel", levelLoadDelay);
     }
     
     void StartCrashSequence()
     {
-        // todo add SFX upon crash
-        // todo add particle effect upon crash
+        isTransitioning = true;
+        audioSource.Stop();
+        audioSource.PlayOneShot(crash);
+        // todo add particle effect upon success
         GetComponent<Movement>().enabled = false;
         Invoke("ReloadLevel", levelLoadDelay);
     }

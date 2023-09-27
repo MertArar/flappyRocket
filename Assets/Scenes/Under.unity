@@ -123,23 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &388433293 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5551853741119888736, guid: 4ac3cbf9c8cc18342892c9c4f3113b97, type: 3}
-  m_PrefabInstance: {fileID: 3240551286440127991}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &388433301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388433293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 189bbc92b908430449971c9c1a32a91a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2728301408882740967, guid: a8f4a0ccf58518641800010d5bbdecc4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.53
+      value: 7.72
       objectReference: {fileID: 0}
     - target: {fileID: 2728301408882740967, guid: a8f4a0ccf58518641800010d5bbdecc4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -455,10 +438,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1064122829, guid: 4ac3cbf9c8cc18342892c9c4f3113b97, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5551853741119888736, guid: 4ac3cbf9c8cc18342892c9c4f3113b97, type: 3}
       propertyPath: m_Name
       value: Rocket
