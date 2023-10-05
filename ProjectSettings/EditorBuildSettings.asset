@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Under.unity
     guid: 5466474b1e507134d8bb897825c4b82e
+  - enabled: 1
+    path: Assets/Scenes/Template.unity
+    guid: ad611bbeda91ff04db94676361c31704
+  - enabled: 1
+    path: Assets/Scenes/Gap.unity
+    guid: b3e617ac944eb3a439d0d9821632447c
+  - enabled: 1
+    path: Assets/Scenes/Chase.unity
+    guid: 384015ec02bc805468f8777f198a84ba
+  - enabled: 1
+    path: Assets/Scenes/Blocky.unity
+    guid: 1358593707305c144b88925892210e8c
+  - enabled: 1
+    path: Assets/Scenes/Timing.unity
+    guid: 1a0268f461894744482ffc7bd6206e5b
   m_configObjects: {}
