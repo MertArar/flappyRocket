@@ -56,6 +56,7 @@ public class Movement : MonoBehaviour
         }
     }
     
+    
     void StartThrusting()
     {
          rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
@@ -86,6 +87,7 @@ public class Movement : MonoBehaviour
                 leftThrusterParticles.Play();
            }
     }
+    
     
     void StopThrusting() 
     {

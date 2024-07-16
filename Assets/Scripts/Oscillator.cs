@@ -8,6 +8,7 @@ public class Oscillator : MonoBehaviour
     [SerializeField] Vector3 movementVector;
     float movementFactor;
     [SerializeField] float period = 2f; 
+   
     void Start()
     {
         startingPosition = transform.position;
